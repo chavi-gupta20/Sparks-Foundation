@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.set('view engine', 'ejs');
 const port = 3000;
-mongoose.connect('mongodb+srv://chavi_new:chavi123456@cluster0.pt5tr.mongodb.net/sparks', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://chavi_new:<password>@cluster0.pt5tr.mongodb.net/sparks', {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
